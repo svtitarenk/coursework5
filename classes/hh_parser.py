@@ -50,7 +50,8 @@ class HHParser:
                 else:
                     salary_from = vacancy["salary"]["from"] if vacancy["salary"]["from"] else 0
                     salary_to = vacancy["salary"]["to"] if vacancy["salary"]["to"] else 0
-                all_vacancies.append({"name": vacancy["name"],
+                all_vacancies.append({"id": vacancy["id"],
+                                      "name": vacancy["name"],
                                       "url": vacancy["alternate_url"],
                                       "salary_from": salary_from,
                                       "salary_to": salary_to,
